@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutter_application_1/Home_Page.dart';
+import 'package:flutter_application_1/routes.dart';
 
 bool obscureText = false;
 
@@ -38,7 +39,9 @@ class Loginpage extends StatelessWidget {
               ElevatedButton(
                   child: Text("Login"),
                   style: TextButton.styleFrom(),
-                  onPressed: () {print("Hi Shahbaz");})
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRoutes.homeRoute);
+                  })
             ],
           ),
         )
